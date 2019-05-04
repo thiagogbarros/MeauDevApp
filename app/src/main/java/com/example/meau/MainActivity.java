@@ -15,9 +15,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.sql.DatabaseMetaData;
 
 public class MainActivity extends Activity {
-    private DatabaseReference reff;
-    Member member;
-    Button sendData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +23,7 @@ public class MainActivity extends Activity {
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
         setContentView(R.layout.activity_main);
-        reff = FirebaseDatabase.getInstance().getReference().child("Member");
-        member = new Member();
+
     }
     public void AcLogin (View view){
         startActivity(new Intent(MainActivity.this, Login.class));
