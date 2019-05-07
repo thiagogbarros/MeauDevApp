@@ -28,4 +28,11 @@ public class MainActivity extends Activity {
     public void AcLogin (View view){
         startActivity(new Intent(MainActivity.this, Login.class));
     }
+    public void AcLogin2 (View view){
+        startActivity(new Intent(MainActivity.this, Login2.class));
+    }
+    public void AcCadastroAnimal (View view){
+        startActivity(new Intent(MainActivity.this, CadastroAnimal.class));
+    }
+
 }

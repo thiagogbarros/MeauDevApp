@@ -1,9 +1,10 @@
 package com.example.meau;
 
+import android.net.Uri;
+
 public class Member {
     private String Nome, Email, Estado, Cidade, Endereco, Telefone, Nome_Usuario, Senha, Confirmacao_Senha;
     private Integer Idade;
-
     public Member() {
 
     }
@@ -87,4 +88,6 @@ public class Member {
     public void setIdade(Integer idade) {
         Idade = idade;
     }
+
+
 }
